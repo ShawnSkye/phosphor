@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!-- Localization Information -->
+<!DOCTYPE overlay SYSTEM "chrome://phosphor/locale/phosphor.dtd">
+
+<overlay id="phosphor_preferences_overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <prefwindow id="BrowserPreferences">
+
+    <!-- Create new pane for Phosphor. -->
+    <prefpane id="phosphorPane" label="&phosphor.name;" image="chrome://phosphor/content/DAMSL-phosphor-clear.png">
+
+      <preferences>
+	<preference id ="exnodeDir" name="extensions.phosphor.exnodeDir" type="string" />
+	<preference id="remoteExnodeDir" name="extensions.phosphor.remoteExnodeDir" type="string"/>o 
+      </preferences>
+      <groupbox id="locationGroupBox">
+	<caption label="Locations"/>
+	<label value="Local exNode Directory:" control="exnodeDir"/>
+     	<textbox preference="exnodeDir" id="exnodeDirField"/>
+	<label value="Sync with..." control="remoteExnodeDir"/>
+  	<textbox preference="remoteExnodeDir" name="remoteExnodeDirField"/>
+	</groupbox>
+
+	<groupbox id="serversGroupBox">
+	  <caption label="Servers"/>
+
+	</groupbox>
+
+    </prefpane>
+  </prefwindow>
+</overlay>

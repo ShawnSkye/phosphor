@@ -1,0 +1,4 @@
+content    phosphor    chrome/content/
+locale     phosphor   en-US chrome/locale/en-US/phosphor/
+overlay	   chrome://browser/content/browser.xul  chrome://phosphor/content/phosphor_overlay.xul
+overlay    chrome://browser/content/preferences/preferences.xul   chrome://phosphor/content/preferences.xul

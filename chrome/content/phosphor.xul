@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!-- Localization Inofrmation -->
+<!DOCTYPE overlay SYSTEM "chrome://phosphor/locale/phosphor.dtd">
+<window id="test" onload="startApplet()" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script src="overlay.js"/>
+
+<iframe id="appletFrame" name="appletFrame"/>
+
+<script type="text/javascript">
+function startApplet(){
+    loadApplet();
+}
+</script>
+
+</window>

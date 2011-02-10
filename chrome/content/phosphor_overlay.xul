@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Localization Inofrmation -->
+<!DOCTYPE overlay SYSTEM "chrome://phosphor/locale/phosphor.dtd">
+
+<overlay id="phosphor" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <!-- Create Phosphor in Tools Menu -->
+  <script src="overlay.js"/>
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="phosphorToolsMenu" label="&phosphor.name;" oncommand="loadPhosphor()"></menuitem>
+  </menupopup>
+</overlay>
+
