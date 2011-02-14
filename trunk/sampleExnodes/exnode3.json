@@ -1,0 +1,9 @@
+{"exNode": {
+  "filename": "somefile.png",
+  "mappings": [{
+    "address": "ftp://lyra.damsl.cis.udel.edu:/home/files/pz3984",
+    "extentEnd": 988472,
+    "extentStart": 0
+  }],
+  "size": 988472
+}}
