@@ -18,6 +18,3 @@ mv phosphorSigned.jar ../../chrome/content/
 rm phosphor.jar
 cd ../..
 zip -r phosphor.xpi *
-mv ~/Dropbox/phosphpor.xpi.BAK ~/Dropbox/phosphor.xpi.BAK.BAK
-mv ~/Dropbox/phosphor.xpi phosphor.xpi.BAK
-cp phosphor.xpi ~/Dropbox/
