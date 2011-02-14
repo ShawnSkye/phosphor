@@ -25,7 +25,7 @@ public class exNode {
 	    exnodeObj = new JSONObject(exnodeFile.get("exNode").toString());
 	}
 	catch(Exception e){
-	    System.out.println("Unable to create exNode from file " + filename + "\n" + e.getMessage()); 
+	   
 	}
     }
 
@@ -37,7 +37,7 @@ public class exNode {
 	    exnodeObj = new JSONObject(exnodeFile.get("exNode").toString());
 	}
 	catch(Exception e){
-	    System.out.println("Unable to create exNode from File Object " + file.toString());
+	   
 	}
     }
     
