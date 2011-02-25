@@ -10,7 +10,7 @@ javac exNode.java
 javac exNodeDir.java
 cd ..
 cd ..
-jar cf phosphor.jar phosphor/phosphor.class /phosphor/FTPListing.class org/
+jar cf phosphor.jar phosphor/phosphor.class phosphor/FTPListing.class org/
 cp phosphor.jar ./phosphor
 cd phosphor
 jarsigner -keystore phosphorStore -storepass phosphorStorePass -keypass phosphorKeyPass -signedjar phosphorSigned.jar phosphor.jar phosphorKeys
