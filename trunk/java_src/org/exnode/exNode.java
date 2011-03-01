@@ -31,7 +31,7 @@ public class exNode {
 
     public exNode(File file){
 	try{
-	    FileReader fr = new FileReader(file.getName());
+	    FileReader fr = new FileReader(file);
 	    JSONTokener jt = new JSONTokener(fr);
 	    exnodeFile = new JSONObject(jt);
 	    exnodeObj = new JSONObject(exnodeFile.get("exNode").toString());
@@ -92,6 +92,15 @@ public class exNode {
 	}
 
     }
+    
+    public JSONArray getMappings(){
+	JSONArray ans = new JSONArray();
+	try{
+	    ans = exnodeObj.getJSONArray("mappings");
+	}
+	catch(Exception e){e.printStackTrace();}
+	return ans;
+    }
 
 
 
@@ -143,8 +152,12 @@ public class exNode {
     // Then it will make sure that it follows the format for being an exNode... once we know what that is
     public boolean isExnode(){
 	//todo
-	if(exnodeFile!=null&&exnodeFile.has("exNode")) return true;
-	else return false;
+	if(exnodeFile!=null&&exnodeFile.has("exNode")){
+	    return true;
+	}
+	else{
+	    return false;
+	}
     }
     
 }
