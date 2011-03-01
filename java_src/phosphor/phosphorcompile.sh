@@ -17,4 +17,4 @@ jarsigner -keystore phosphorStore -storepass phosphorStorePass -keypass phosphor
 mv phosphorSigned.jar ../../chrome/content/
 rm phosphor.jar
 cd ../..
-zip -r phosphor.xpi *
+zip -rq phosphor.xpi *
