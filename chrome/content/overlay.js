@@ -5,6 +5,7 @@ function loadPhosphor() {
     var exnodePath = prefManager.getCharPref("extensions.phosphor.exnodeDir");
     var remoteExnodeDir = prefManager.getCharPref("extensions.phosphor.remoteExnodeDir");
     var remoteExnodeDirPort = prefManager.getIntPref("extensions.phosphor.remoteExnodeDirPort");
+    var defDLdir = prefManager.getCharPref("extensions.phosphor.defDLdir");
     
     if(exnodePath==""){
 
@@ -45,6 +46,7 @@ function loadPhosphor() {
 				       theTabBrowser.contentDocument.getElementById("exnodepath").setAttribute("value", exnodePath);
 				       theTabBrowser.contentDocument.getElementById("remoteExnodeDir").setAttribute("value", remoteExnodeDir);
 				       theTabBrowser.contentDocument.getElementById("remoteExnodeDirPort").setAttribute("value", remoteExnodeDirPort);
+				       theTabBrowser.contentDocument.getElementById("defDLdir").setAttribute("value", defDLdir);
 				       theTabBrowser.contentDocument.getElementById("sep").setAttribute("value", sep);
 				   }, true);
     

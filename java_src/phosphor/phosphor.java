@@ -19,6 +19,7 @@ public class phosphor extends Applet implements MouseListener, MouseMotionListen
     int xClick;
     int yClick;
     File[] list;
+    String downloadDir;
     ArrayList exnodeList;
     int exnodeListSize;
     ArrayList dirList;
@@ -74,6 +75,8 @@ public class phosphor extends Applet implements MouseListener, MouseMotionListen
 	    }
 	    catch(Exception e){e.printStackTrace();}
 	}
+
+      	downloadDir = getParameter("defDLdir");
 
 	exnodeRootDir = new exNodeDir(exnodeRootPath);
 	getExnodes(exnodeRootDir);
@@ -272,6 +275,11 @@ public class phosphor extends Applet implements MouseListener, MouseMotionListen
 			exNode a = new exNode();
 			a = (exNode)exnodeList.get(i);
 			System.out.println(a.writeExnode(2));
+			exNodeHandler eh = new exNodeHandler();
+			
+			File targetFile = new File(downloadDir + sep + a.getFilename());
+			targetFile.createNewFile();
+			eh.download(a, targetFile);
 		    }
 		    else if(i==-2){
 			getExnodes(exnodeRootDir);
@@ -296,7 +304,7 @@ public class phosphor extends Applet implements MouseListener, MouseMotionListen
 		x+=iconDim+hSpacing; 
 	    }
 	}
-	catch(Exception e){System.out.println("Exception in checkClickCoords()  " + e.getMessage());}
+	catch(Exception e){System.out.println("Exception in checkClickCoords()  "); e.printStackTrace();}
     }
 
 
