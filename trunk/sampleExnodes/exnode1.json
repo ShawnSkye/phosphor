@@ -1,9 +1,12 @@
 {"exNode": {
-  "filename": "moveez.mp4",
+  "filename": "TestFile",
   "mappings": [{
-    "address": "ftp://lyra.damsl.cis.udel.edu:/home/files/la3234",
-    "extentEnd": 888256,
-    "extentStart": 0
+    "address": "ftp://lyra.damsl.cis.udel.edu:/home/userguy/files/test123",
+    "username": "userguy",
+    "password": "userguypass",
+    "extentEnd": 10485760,
+    "extentStart": 0,
+    "port": 21
   }],
-  "size": 888256
+  "size": 10485760
 }}

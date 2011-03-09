@@ -8,6 +8,7 @@ cd org
 cd exnode
 javac exNode.java
 javac exNodeDir.java
+javac exNodeHandler.java
 cd ..
 cd ..
 jar cf phosphor.jar phosphor/phosphor.class phosphor/FTPListing.class org/
