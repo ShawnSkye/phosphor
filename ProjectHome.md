@@ -1,0 +1,1 @@
+A browser extension to help manage distributed files.
